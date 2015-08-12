@@ -9,7 +9,7 @@
 
 namespace Mesh
 {
-	void ReadGmsh(std::istream& msh, std::vector<node>& nodes, std::vector<element>& elements);
+	void ReadGmsh(std::istream& msh, std::vector<node>& nodes, std::vector<element>& elements, std::vector<group>& groups);
 	std::string NextIdentifier(std::istream& msh);
 	int SearchNode(std::vector<node>& nodes, int no);
 };

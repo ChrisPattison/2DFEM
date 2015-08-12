@@ -56,7 +56,7 @@
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <CompileAs>CompileAsCpp</CompileAs>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <DisableLanguageExtensions>true</DisableLanguageExtensions>
+      <DisableLanguageExtensions>false</DisableLanguageExtensions>
       <Cpp0xSupport>true</Cpp0xSupport>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
       <FloatingPointModel>Precise</FloatingPointModel>
