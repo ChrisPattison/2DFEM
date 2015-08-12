@@ -1,0 +1,42 @@
+\documentclass[12pt]{article}
+\newcommand{\diff}[0]{\, \mathrm{d}}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\begin{document}
+\section{Setup}
+\[\frac{\partial T}{\partial t} + \nabla\cdot T \vec{u}-\alpha\nabla^2 T=q\]
+\[\int_D (\frac{\partial T}{\partial t} + \nabla\cdot T \vec{u}-\alpha\nabla^2 T - q)\omega_i\diff x \diff t = 0\]
+\vspace{3em}
+%\[\psi_i(x) = 
+%\begin{cases}
+%1-\frac{x-x_{i-1}}{x_{i+1}-x_{i-1}} & x_{i-1} \leq x \leq x_i\\
+%\frac{x-x_{i-1}}{x_{i+1}-x_{i-1}} & x_i \leq x \leq x_{i+1}\\
+%\end{cases}\]
+\[\psi_i(x) = 
+\begin{cases}
+\frac{x-x_{i-1}}{x_{i}-x_{i-1}} & x_{i-1} \leq x \leq x_i
+\vspace{1ex}\\
+\frac{-x-x_{i+1}}{x_{i+1}-x_i} & x_i \leq x \leq x_{i+1}\\
+\end{cases}\]
+
+\[\int_D (\frac{\partial T}{\partial t} + \frac{\partial{T\vec{u}}}{\partial t}+\frac{\partial T\vec{u}}{\partial{x}}+\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial t^2})\omega_i \diff x \diff t\]
+\[\int_{t_k}^{t_{k+1}}\int_L (\frac{\partial T}{\partial t} + \frac{\partial{T\vec{u}}}{\partial t}+\frac{\partial T\vec{u}}{\partial{x}}+\frac{\partial^2 T}{\partial x^2}+\frac{\partial^2 T}{\partial t^2})\omega_i \diff x \diff t\]
+
+\section{Transient Term}
+\[\int_{t_k}^{t_{k+1}}\int_L \frac{\partial T}{\partial t} \omega_i \diff x \diff t \]
+\[\int_D \frac{\partial T}{\partial t}\omega_i\diff x \diff t\]
+\[\sum\limits_j\int_L \phi_jT_{j,k+1}\Delta t \omega_i\diff x\]
+\[\sum\limits_jT_{j,k+1}\Delta t \int_L \phi_j\omega_i\diff x\]
+\\
+\[j=i-1\]
+\[\sum\limits_j T_{j,k+1} \Delta t \frac{-x_{j-1}-5x_j}{6}\]
+\[j=i\]
+\[\sum\limits_jT_{j,k+1}\Delta t (x_{j+1}-x_{j-1})\]
+\[j=i+1\]
+\[\sum\limits_j T_{j,k+1} \Delta t \frac{-x_j-5x_{j+1}}{6}\]
+\section{Convective Term}
+\[\int_D \frac{\partial{T\vec{u}}}{\partial t}\omega_i+\frac{\partial T\vec{u}}{\partial x}\omega_i \diff x \diff t \]
+\[\int_D \frac{\partial\sum\limits_j T_j\vec{u}\phi_j}{\partial t}\omega_i + \frac{\partial\sum\limits_j T_j\vec{u}\phi_j}{\partial x}\omega_i \diff x \diff t\]
+\[\sum\limits_j T_{j,k+1} \vec{u}_{j,k+1} \Delta t \int_L  \phi_j+ \sum_j (x_{i+1}-x_{i-1})\int_t  T_j\vec{u}_j\phi_j \]
+\end{document}

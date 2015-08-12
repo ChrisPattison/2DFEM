@@ -1,0 +1,323 @@
+﻿Build started 8/12/2015 1:56:43 AM.
+     1>Project "C:\Users\chris\Dropbox\FEM\FEM.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /Ot /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /MDd /GS /arch:AVX /fp:precise /fp:except /Za /Zc:wchar_t /Zc:forScope /Zc:inline /openmp- /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt FEM.cpp
+         FEM.cpp
+     1>c:\users\chris\dropbox\fem\eigen\src\core\util\xprhelper.h(388): error C3771: 'CwiseUnaryOp': friend declaration cannot be found in the nearest namespace scope
+         c:\users\chris\dropbox\fem\eigen\src\core\util\xprhelper.h(391): note: see reference to class template instantiation 'Eigen::internal::special_scalar_op_base<Derived,Scalar,OtherScalar,true>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\util\xprhelper.h(388): error C2059: syntax error: '<'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\util\xprhelper.h(390): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+     1>c:\users\chris\dropbox\fem\eigen\src\core\mathfunctions.h(174): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\mathfunctions.h(177): note: see reference to class template instantiation 'Eigen::internal::imag_ref_default_impl<Scalar,false>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(26): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(33): note: see reference to class template instantiation 'Eigen::internal::scalar_sum_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(29): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(32): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(54): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(61): note: see reference to class template instantiation 'Eigen::internal::scalar_product_op<LhsScalar,RhsScalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(57): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(60): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(85): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(90): note: see reference to class template instantiation 'Eigen::internal::scalar_conj_product_op<LhsScalar,RhsScalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(89): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(106): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(113): note: see reference to class template instantiation 'Eigen::internal::scalar_min_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(109): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(112): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(129): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(136): note: see reference to class template instantiation 'Eigen::internal::scalar_max_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(132): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(135): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(154): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(163): note: see reference to class template instantiation 'Eigen::internal::scalar_hypot_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(190): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(194): note: see reference to class template instantiation 'Eigen::internal::scalar_difference_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(193): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(215): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(219): note: see reference to class template instantiation 'Eigen::internal::scalar_quotient_op<LhsScalar,RhsScalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(218): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(312): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(316): note: see reference to class template instantiation 'Eigen::internal::scalar_opposite_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(315): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(332): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(336): note: see reference to class template instantiation 'Eigen::internal::scalar_abs_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(335): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(354): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(358): note: see reference to class template instantiation 'Eigen::internal::scalar_abs2_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(357): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(370): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(373): note: see reference to class template instantiation 'Eigen::internal::scalar_conjugate_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(372): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(392): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(393): note: see reference to class template instantiation 'Eigen::internal::scalar_cast_op<Scalar,NewType>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(466): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(469): note: see reference to class template instantiation 'Eigen::internal::scalar_exp_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(482): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(485): note: see reference to class template instantiation 'Eigen::internal::scalar_log_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(511): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(513): note: see reference to class template instantiation 'Eigen::internal::scalar_multiple_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(546): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(548): note: see reference to class template instantiation 'Eigen::internal::scalar_quotient1_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(561): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(565): note: see reference to class template instantiation 'Eigen::internal::scalar_constant_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(563): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(574): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(575): note: see reference to class template instantiation 'Eigen::internal::scalar_identity_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(605): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(614): note: see reference to class template instantiation 'Eigen::internal::linspaced_op_impl<Scalar,false>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(608): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(629): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(640): note: see reference to class template instantiation 'Eigen::internal::linspaced_op_impl<Scalar,true>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(633): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(656): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(683): note: see reference to class template instantiation 'Eigen::internal::linspaced_op<Scalar,RandomAccess>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(665): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(668): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(677): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(715): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(717): note: see reference to class template instantiation 'Eigen::internal::scalar_add_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(728): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(731): note: see reference to class template instantiation 'Eigen::internal::scalar_sqrt_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(765): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(768): note: see reference to class template instantiation 'Eigen::internal::scalar_sin_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(785): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(788): note: see reference to class template instantiation 'Eigen::internal::scalar_tan_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(804): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(807): note: see reference to class template instantiation 'Eigen::internal::scalar_acos_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(823): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(826): note: see reference to class template instantiation 'Eigen::internal::scalar_asin_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(862): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(864): note: see reference to class template instantiation 'Eigen::internal::scalar_inverse_mult_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(876): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(877): note: see reference to class template instantiation 'Eigen::internal::scalar_inverse_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(892): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(893): note: see reference to class template instantiation 'Eigen::internal::scalar_square_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\functors.h(908): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\functors.h(909): note: see reference to class template instantiation 'Eigen::internal::scalar_cube_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(395): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(521): note: see reference to class template instantiation 'Eigen::DenseBase<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(175): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(505): note: see reference to class template instantiation 'Eigen::MatrixBase<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(179): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(211): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\util\blasutil.h(170): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\util\blasutil.h(171): note: see reference to class template instantiation 'Eigen::internal::blas_traits<XprType>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\nestbyvalue.h(51): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\nestbyvalue.h(98): note: see reference to class template instantiation 'Eigen::NestByValue<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\nestbyvalue.h(61): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\nestbyvalue.h(74): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\nestbyvalue.h(86): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\forcealignedaccess.h(50): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\forcealignedaccess.h(100): note: see reference to class template instantiation 'Eigen::ForceAlignedAccess<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\forcealignedaccess.h(60): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\forcealignedaccess.h(73): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\forcealignedaccess.h(85): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisebinaryop.h(173): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\cwisebinaryop.h(197): note: see reference to class template instantiation 'Eigen::CwiseBinaryOpImpl<BinaryOp,Lhs,Rhs,Eigen::Dense>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisebinaryop.h(186): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwiseunaryop.h(102): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\cwiseunaryop.h(122): note: see reference to class template instantiation 'Eigen::CwiseUnaryOpImpl<UnaryOp,XprType,Eigen::Dense>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwiseunaryop.h(113): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(70): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(98): note: see reference to class template instantiation 'Eigen::CwiseNullaryOp<NullaryOp,PlainObjectType>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(81): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(182): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(182): error C2373: 'Eigen::DenseBase<Derived>::Constant': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(298): note: see declaration of 'Eigen::DenseBase<Derived>::Constant'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(204): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(204): error C2373: 'Eigen::DenseBase<Derived>::Constant': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(300): note: see declaration of 'Eigen::DenseBase<Derived>::Constant'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(221): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(221): error C2373: 'Eigen::DenseBase<Derived>::Constant': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(302): note: see declaration of 'Eigen::DenseBase<Derived>::Constant'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(246): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(246): error C2373: 'Eigen::DenseBase<Derived>::LinSpaced': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(305): note: see declaration of 'Eigen::DenseBase<Derived>::LinSpaced'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(259): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(259): error C2373: 'Eigen::DenseBase<Derived>::LinSpaced': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(309): note: see declaration of 'Eigen::DenseBase<Derived>::LinSpaced'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(280): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(280): error C2373: 'Eigen::DenseBase<Derived>::LinSpaced': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(307): note: see declaration of 'Eigen::DenseBase<Derived>::LinSpaced'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(293): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(293): error C2373: 'Eigen::DenseBase<Derived>::LinSpaced': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(311): note: see declaration of 'Eigen::DenseBase<Derived>::LinSpaced'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(431): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(431): error C2373: 'Eigen::DenseBase<Derived>::Zero': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(323): note: see declaration of 'Eigen::DenseBase<Derived>::Zero'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(454): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(454): error C2373: 'Eigen::DenseBase<Derived>::Zero': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(324): note: see declaration of 'Eigen::DenseBase<Derived>::Zero'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(471): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(471): error C2373: 'Eigen::DenseBase<Derived>::Zero': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(325): note: see declaration of 'Eigen::DenseBase<Derived>::Zero'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(560): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(560): error C2373: 'Eigen::DenseBase<Derived>::Ones': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(326): note: see declaration of 'Eigen::DenseBase<Derived>::Ones'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(583): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(583): error C2373: 'Eigen::DenseBase<Derived>::Ones': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(327): note: see declaration of 'Eigen::DenseBase<Derived>::Ones'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(600): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(600): error C2373: 'Eigen::DenseBase<Derived>::Ones': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(328): note: see declaration of 'Eigen::DenseBase<Derived>::Ones'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(686): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(686): error C2373: 'Eigen::MatrixBase<Derived>::Identity': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(257): note: see declaration of 'Eigen::MatrixBase<Derived>::Identity'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(704): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(704): error C2373: 'Eigen::MatrixBase<Derived>::Identity': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(256): note: see declaration of 'Eigen::MatrixBase<Derived>::Identity'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(805): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(805): error C2373: 'Eigen::MatrixBase<Derived>::Unit': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(258): note: see declaration of 'Eigen::MatrixBase<Derived>::Unit'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(820): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(820): error C2373: 'Eigen::MatrixBase<Derived>::Unit': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(259): note: see declaration of 'Eigen::MatrixBase<Derived>::Unit'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(830): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(830): error C2373: 'Eigen::MatrixBase<Derived>::UnitX': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(260): note: see declaration of 'Eigen::MatrixBase<Derived>::UnitX'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(840): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(840): error C2373: 'Eigen::MatrixBase<Derived>::UnitY': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(261): note: see declaration of 'Eigen::MatrixBase<Derived>::UnitY'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(850): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(850): error C2373: 'Eigen::MatrixBase<Derived>::UnitZ': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(262): note: see declaration of 'Eigen::MatrixBase<Derived>::UnitZ'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(860): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\cwisenullaryop.h(860): error C2373: 'Eigen::MatrixBase<Derived>::UnitW': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(263): note: see declaration of 'Eigen::MatrixBase<Derived>::UnitW'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\dot.h(145): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\dot.h(145): error C2373: 'Eigen::MatrixBase<Derived>::normalized': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(208): note: see declaration of 'Eigen::MatrixBase<Derived>::normalized'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\block.h(225): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\block.h(310): note: see reference to class template instantiation 'Eigen::internal::BlockImpl_dense<XprType,BlockRows,BlockCols,InnerPanel,HasDirectAccess>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\block.h(245): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\transpose.h(157): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\transpose.h(176): note: see reference to class template instantiation 'Eigen::TransposeImpl<MatrixType,Eigen::Dense>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\transpose.h(169): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\transpose.h(241): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\diagonalproduct.h(62): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\diagonalproduct.h(116): note: see reference to class template instantiation 'Eigen::DiagonalProduct<MatrixType,DiagonalType,ProductOrder>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\diagonalproduct.h(67): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\flagged.h(92): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\flagged.h(122): note: see reference to class template instantiation 'Eigen::Flagged<ExpressionType,Added,Removed>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\flagged.h(104): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\generalproduct.h(215): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\generalproduct.h(218): note: see reference to class template instantiation 'Eigen::GeneralProduct<Lhs,Rhs,3>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\generalproduct.h(596): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\generalproduct.h(631): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\products\coeffbasedproduct.h(165): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\products\coeffbasedproduct.h(219): note: see reference to class template instantiation 'Eigen::CoeffBasedProduct<LhsNested,RhsNested,NestingFlags>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\products\coeffbasedproduct.h(175): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\products\coeffbasedproduct.h(192): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\bandmatrix.h(118): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\bandmatrix.h(156): note: see reference to class template instantiation 'Eigen::internal::BandMatrixBase<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\bandmatrix.h(322): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\bandmatrix.h(328): note: see reference to class template instantiation 'Eigen::internal::TridiagonalMatrix<Scalar,Size,Options>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\bandmatrix.h(326): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\select.h(76): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\select.h(110): note: see reference to class template instantiation 'Eigen::Select<ConditionMatrixType,ThenMatrixType,ElseMatrixType>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\select.h(84): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(85): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(103): note: see reference to class template instantiation 'Eigen::PartialReduxExpr<MatrixType,MemberOp,Direction>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(93): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(277): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(588): note: see reference to class template instantiation 'Eigen::VectorwiseOp<ExpressionType,Direction>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(289): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(301): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(311): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(321): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(330): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(339): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(348): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(358): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(365): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(372): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(379): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(399): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(560): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(602): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(602): error C2373: 'Eigen::DenseBase<Derived>::colwise': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(444): note: see declaration of 'Eigen::DenseBase<Derived>::colwise'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(627): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(627): error C2373: 'Eigen::DenseBase<Derived>::rowwise': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(442): note: see declaration of 'Eigen::DenseBase<Derived>::rowwise'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\random.h(20): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\random.h(21): note: see reference to class template instantiation 'Eigen::internal::scalar_random_op<Scalar>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\replicate.h(157): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\replicate.h(157): error C2373: 'Eigen::DenseBase<Derived>::replicate': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(470): note: see declaration of 'Eigen::DenseBase<Derived>::replicate'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\replicate.h(173): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\replicate.h(173): error C2373: 'Eigen::VectorwiseOp<ExpressionType,Direction>::replicate': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(413): note: see declaration of 'Eigen::VectorwiseOp<ExpressionType,Direction>::replicate'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\reverse.h(150): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\reverse.h(181): note: see reference to class template instantiation 'Eigen::Reverse<ExpressionType,Direction>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\reverse.h(165): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\reverse.h(202): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\reverse.h(202): error C2373: 'Eigen::DenseBase<Derived>::reverse': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\densebase.h(475): note: see declaration of 'Eigen::DenseBase<Derived>::reverse'
+     1>c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(100): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(138): note: see reference to class template instantiation 'Eigen::ArrayWrapper<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(112): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(225): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(260): note: see reference to class template instantiation 'Eigen::MatrixWrapper<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\core\arraywrapper.h(237): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\lu\determinant.h(23): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\lu\determinant.h(31): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\lu\inverse.h(196): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\householder\householdersequence.h(197): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\householder\householdersequence.h(398): note: see reference to class template instantiation 'Eigen::HouseholderSequence<VectorsType,CoeffsType,Side>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\orthomethods.h(123): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\homogeneous.h(164): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\homogeneous.h(164): error C2373: 'Eigen::MatrixBase<Derived>::hnormalized': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\matrixbase.h(419): note: see declaration of 'Eigen::MatrixBase<Derived>::hnormalized'
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\homogeneous.h(191): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\homogeneous.h(191): error C2373: 'Eigen::VectorwiseOp<ExpressionType,Direction>::hnormalized': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\core\vectorwiseop.h(584): note: see declaration of 'Eigen::VectorwiseOp<ExpressionType,Direction>::hnormalized'
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(402): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(637): note: see reference to class template instantiation 'Eigen::Transform<Scalar,Dim,Mode,Options>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(414): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(1000): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(1000): error C2373: 'Eigen::Transform<Scalar,Dim,Mode,Options>::rotation': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\geometry\transform.h(550): note: see declaration of 'Eigen::Transform<Scalar,Dim,Mode,Options>::rotation'
+     1>c:\users\chris\dropbox\fem\eigen\src\eigenvalues\matrixbaseeigenvalues.h(24): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\eigenvalues\matrixbaseeigenvalues.h(29): note: see reference to class template instantiation 'Eigen::internal::eigenvalues_selector<Derived,IsComplex>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\eigenvalues\matrixbaseeigenvalues.h(36): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\eigenvalues\matrixbaseeigenvalues.h(41): note: see reference to class template instantiation 'Eigen::internal::eigenvalues_selector<Derived,false>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(339): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(450): note: see reference to class template instantiation 'Eigen::SparseMatrixBase<Derived>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(356): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(362): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(398): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(443): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(62): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(83): note: see reference to class template instantiation 'Eigen::BlockImpl<XprType,BlockRows,BlockCols,true,Eigen::Sparse>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(67): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(246): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(274): note: see reference to class template instantiation 'Eigen::BlockImpl<Eigen::SparseMatrix<_Scalar,_Options,_Index>,BlockRows,BlockCols,true,Eigen::Sparse>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(251): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(343): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(371): note: see reference to class template instantiation 'Eigen::BlockImpl<const Eigen::SparseMatrix<_Scalar,_Options,_Index>,BlockRows,BlockCols,true,Eigen::Sparse>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(348): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(387): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(387): error C2373: 'Eigen::SparseMatrixBase<Derived>::innerVector': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(404): note: see declaration of 'Eigen::SparseMatrixBase<Derived>::innerVector'
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(413): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(413): error C2373: 'Eigen::SparseMatrixBase<Derived>::innerVectors': redefinition; different type modifiers
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparsematrixbase.h(410): note: see declaration of 'Eigen::SparseMatrixBase<Derived>::innerVectors'
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(454): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(532): note: see reference to class template instantiation 'Eigen::BlockImpl<XprType,BlockRows,BlockCols,InnerPanel,Eigen::Sparse>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseblock.h(466): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecore\sparseproduct.h(184): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(328): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(374): note: see reference to class template instantiation 'Eigen::SimplicialLLT<_MatrixType,_UpLo,_Ordering>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(334): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(423): warning C4180: qualifier applied to function type has no meaning; ignored
+         c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(468): note: see reference to class template instantiation 'Eigen::SimplicialLDLT<_MatrixType,_UpLo,_Ordering>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparsecholesky\simplicialcholesky.h(429): warning C4180: qualifier applied to function type has no meaning; ignored
+     1>c:\users\chris\dropbox\fem\eigen\src\sparselu\sparseluimpl.h(46): warning C4224: nonstandard extension used: formal parameter 'traits' was previously defined as a type
+         c:\users\chris\dropbox\fem\eigen\src\sparselu\sparseluimpl.h(59): note: see reference to class template instantiation 'Eigen::internal::SparseLUImpl<Scalar,Index>' being compiled
+     1>c:\users\chris\dropbox\fem\eigen\src\sparselu\sparselu_panel_dfs.h(67): warning C4224: nonstandard extension used: formal parameter 'traits' was previously defined as a type
+     1>Done Building Project "C:\Users\chris\Dropbox\FEM\FEM.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:03.46

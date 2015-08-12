@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\newcommand{\diff}[0]{\, \mathrm{d}}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\begin{document}
+\[\int_D (\frac{\partial T}{\partial t} + \nabla\cdot T \vec{u}-\alpha\nabla^2 T - q)\omega_i\diff x \diff t = 0\]
+\[\phi_i(t) = 
+\begin{cases}
+1 & t_{i-1} < t \leq t_i
+\end{cases}\]
+\[\psi_i(x) = 
+\begin{cases}
+1-\frac{x-x_{i-1}}{x_{i+1}-x_{i-1}} & x_{i-1} \leq x \leq x_i\\
+\frac{x-x_{i-1}}{x_{i+1}-x_{i-1}} & x_i \leq x \leq x_{i+1}\\
+\end{cases}\]
+\[\sigma_{i,k}(x,t) = \psi_i(x)\psi_k(t)\]
+\[\lambda_{i,k}(x,t) = \psi_i(x)\phi_k(t)\]
+\[\omega_{j,m} = \sigma_{j,m}\]
+\[\int_D (\underbrace{\frac{\partial T}{\partial t} + \frac{\partial{T\vec{u}}}{\partial t}}_{T=\sigma_{i,k} T_{i,k}}+\underbrace{\frac{\partial T\vec{u}}{\partial{x}}+\frac{\partial^2 T}{\partial x^2}}_{T=\lambda_{i,k} T_{i,k}}+\underbrace{\frac{\partial^2 T}{\partial t^2}}_{T = \sigma_{i,k} T_{i,k}})\omega_{j,m} \diff x \diff t\]
+
+\end{document}
