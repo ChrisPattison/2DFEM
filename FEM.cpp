@@ -4,6 +4,23 @@ namespace FEM
 {
 	PoissonSolver::PoissonSolver(std::istream& infile, std::istream& mesh) {
 		Mesh::ReadGmsh(mesh, this->Nodes, this->Elements, this->Groups);
+
+		try {
+			infile >> this->Resid;
+			for (;;) { // TODO: make more flexible
+				std::string name;
+				char type;
+				infile >> name;
+				Mesh::group& g = this->Groups[Mesh::SearchGroup(this->Groups, name)];
+				infile >> type;
+				g.BoundType = static_cast<Mesh::BOUNDARY_TYPE>(type);
+				infile >> g.Value;
+			}
+		}
+		catch (std::istream::failure e) {
+			if (!infile.eof()) throw e;
+		}
+
 		this->T = Eigen::VectorXd(this->Nodes.size());
 		T.fill(300);
 		q.fill(0);

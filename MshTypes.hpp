@@ -13,6 +13,12 @@ namespace Mesh
 		TRIANGLE = 2
 	};
 
+	enum BOUNDARY_TYPE
+	{
+		DIRICHLET = 'd',
+		NEUMANN = 'n'
+	};
+
 	struct element
 	{
 		std::vector<int> Nodes;
@@ -27,6 +33,7 @@ namespace Mesh
 		std::vector<int> Members;
 		int GmshNo;
 		std::string Name;
+		BOUNDARY_TYPE BoundType;
 		double Value;
 	};
 

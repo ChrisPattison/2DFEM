@@ -13,4 +13,5 @@ namespace Mesh
 	std::string NextIdentifier(std::istream& msh);
 	int SearchNode(std::vector<node>& nodes, int no);
 	int SearchGroup(std::vector<group>& groups, int no);
+	int SearchGroup(std::vector<group>& groups, std::string name)
 };

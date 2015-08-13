@@ -23,5 +23,6 @@ namespace FEM
 		Eigen::VectorXd T;
 		Eigen::VectorXd q;
 		Eigen::SparseMatrix<double> A;
+		double Resid;
 	};
 };

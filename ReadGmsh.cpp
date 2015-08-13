@@ -27,6 +27,7 @@ namespace Mesh
 						if (line.compare("$EndPhysicalNames") != 0) throw std::exception("Unexpected end of PhysicalNames section");
 						msh >> groups[i].Dim;
 						msh >> groups[i].GmshNo;
+						msh >> groups[i].Name;
 					}
 				}
 				if (line.compare("$Nodes") == 0) {
@@ -77,9 +78,11 @@ namespace Mesh
 					}
 				}
 			}
-		} catch (std::istream::failure e) {
+		}
+		catch (std::istream::failure e) {
 			if (!msh.eof()) throw e;
 		}
+
 		for (node& n : nodes) {
 			n.Elements.shrink_to_fit();
 		}
@@ -105,6 +108,15 @@ namespace Mesh
 	int SearchGroup(std::vector<group>& groups, int no) {
 		for (int i = 0; i < groups.size(); ++i) {
 			if (groups[i].GmshNo == no) {
+				return i;
+			}
+		}
+		throw std::exception(("Couldn't find group: " + std::to_string(no)).c_str());
+	}
+
+	int SearchGroup(std::vector<group>& groups, std::string name) {
+		for (int i = 0; i < groups.size(); ++i) {
+			if (groups[i].Name == name) {
 				return i;
 			}
 		}
