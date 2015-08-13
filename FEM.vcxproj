@@ -100,12 +100,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FEM.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="testcase.inp">
       <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
       <FileType>Document</FileType>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GmshReader\GmshReader.vcxproj">
+      <Project>{3c450f81-22ba-47e5-959e-b46fe665a89c}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

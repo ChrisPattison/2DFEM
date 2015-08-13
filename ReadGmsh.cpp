@@ -26,7 +26,7 @@ namespace Mesh
 						msh >> line;
 						if (line.compare("$EndPhysicalNames") != 0) throw std::exception("Unexpected end of PhysicalNames section");
 						msh >> groups[i].Dim;
-						msh >> groups[i].No;
+						msh >> groups[i].GmshNo;
 					}
 				}
 				if (line.compare("$Nodes") == 0) {
@@ -59,6 +59,7 @@ namespace Mesh
 						msh >> type;
 						if (type != 2) throw std::exception("Unknown mesh attributes");
 						msh >> elements[i].Grp, elements[i].Grp; // on purpose
+						elements[i].Grp = SearchGroup(groups, elements[i].Grp);
 						int node;
 						switch (elements[i].Type) {
 						case ELEMENT_TYPE::LINE:
@@ -99,5 +100,14 @@ namespace Mesh
 			}
 		}
 		throw std::exception(("Couldn't find node: " + std::to_string(no)).c_str());
+	}
+
+	int SearchGroup(std::vector<group>& groups, int no) {
+		for (int i = 0; i < groups.size(); ++i) {
+			if (groups[i].GmshNo == no) {
+				return i;
+			}
+		}
+		throw std::exception(("Couldn't find group: " + std::to_string(no)).c_str());
 	}
 };

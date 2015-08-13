@@ -25,7 +25,9 @@ namespace Mesh
 	{
 		int Dim;
 		std::vector<int> Members;
-		int No;
+		int GmshNo;
+		std::string Name;
+		double Value;
 	};
 
 	struct node
@@ -34,6 +36,4 @@ namespace Mesh
 		int MshNo;
 		std::vector<int> Elements;
 	};
-
-	int SearchNode(std::vector<node>& nodes, int no);
 };

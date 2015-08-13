@@ -1,7 +1,7 @@
 *.opensdf
 *.sdf
 *.suo
-*.vcxproj.users
+*.vcxproj.user
 /.vs/*
 /Debug/*
 /Release/*

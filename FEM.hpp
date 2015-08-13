@@ -2,7 +2,6 @@
 #include <iostream>
 #include <exception>
 #include <vector>
-#include "MshTypes.hpp"
 #include "ReadGmsh.hpp"
 #include "Eigen/Sparse"
 #include "Eigen/Dense"
