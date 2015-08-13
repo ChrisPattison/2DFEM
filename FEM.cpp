@@ -2,7 +2,10 @@
 
 namespace FEM
 {
-	PoissonSolver::PoissonSolver(std::istream& infile, std::istream& mesh) {
+	PoissonSolver::PoissonSolver(std::istream& infile) {
+		char mshpath[256];
+		infile.getline(mshpath, 256);
+		std::fstream mesh(mshpath);
 		Mesh::ReadGmsh(mesh, this->Nodes, this->Elements, this->Groups);
 
 		try {

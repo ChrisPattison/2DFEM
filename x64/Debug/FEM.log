@@ -1,13 +1,6 @@
-﻿Build started 8/13/2015 3:17:48 AM.
+﻿Build started 8/13/2015 4:41:52 AM.
      1>Project "C:\Users\chris\Dropbox\FEM\FEM.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /Od /Ot /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /MDd /GS /arch:AVX /fp:precise /fp:except /Zc:wchar_t /Zc:forScope /Zc:inline /openmp- /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt FEM.cpp main.cpp
-         main.cpp
-         Generating Code...
-         Compiling...
-         FEM.cpp
-         Generating Code...
-       Link:
+     1>Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\chris\Dropbox\FEM\x64\Debug\FEM.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\chris\Dropbox\FEM\x64\Debug\FEM.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\chris\Dropbox\FEM\x64\Debug\FEM.lib" /MACHINE:X64 x64\Debug\FEM.obj
          x64\Debug\main.obj
          C:\Users\chris\Dropbox\FEM\x64\Debug\GmshReader.lib
@@ -16,4 +9,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:13.22
+Time Elapsed 00:00:01.38

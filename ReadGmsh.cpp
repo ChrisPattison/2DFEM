@@ -120,6 +120,6 @@ namespace Mesh
 				return i;
 			}
 		}
-		throw std::exception(("Couldn't find group: " + std::to_string(no)).c_str());
+		throw std::exception(("Couldn't find group: " + name).c_str());
 	}
 };
