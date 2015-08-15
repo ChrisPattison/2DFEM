@@ -23,11 +23,12 @@ namespace Mesh
 					msh >> no;
 					groups.resize(no);
 					for (int i = 0; i < no; ++i) {
-						msh >> line;
-						if (line.compare("$EndPhysicalNames") != 0) throw std::exception("Unexpected end of PhysicalNames section");
+						//msh >> line;
+						//if (line == "$EndPhysicalNames" && i < no) throw std::exception("Unexpected end of PhysicalNames section");
 						msh >> groups[i].Dim;
 						msh >> groups[i].GmshNo;
 						msh >> groups[i].Name;
+						groups[i].Name = groups[i].Name.substr(1, groups[i].Name.length() - 2);
 					}
 				}
 				if (line.compare("$Nodes") == 0) {
@@ -36,13 +37,13 @@ namespace Mesh
 					nodes.resize(no);
 					double tmp;
 					for (int i = 0; i < no; ++i) {
-						msh >> line;
-						if (line.compare("$EndNodes") != 0) throw std::exception("Unexpected end of Nodes section");
+						//msh >> line;
+						//if (line.compare("$EndNodes") != 0) throw std::exception("Unexpected end of Nodes section");
 						msh >> nodes[i].MshNo;
 						msh >> tmp;
-						nodes[i].Coord(1) = tmp;
+						nodes[i].Coord(0) = tmp;
 						msh >> tmp;
-						nodes[i].Coord(2) = tmp;
+						nodes[i].Coord(1) = tmp;
 						msh >> tmp;
 					}
 				}
@@ -51,8 +52,8 @@ namespace Mesh
 					msh >> no;
 					elements.resize(no);
 					for (int i = 0; i < no; ++i) {
-						msh >> line;
-						if (line.compare("$EndElements") != 0) throw std::exception("Unexpected end of Elements section");
+						//msh >> line;
+						//if (line.compare("$EndElements") != 0) throw std::exception("Unexpected end of Elements section");
 						msh >> elements[i].No;
 						int type;
 						msh >> type;

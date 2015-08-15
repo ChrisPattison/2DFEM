@@ -4,7 +4,7 @@ namespace FEM
 {
 	PoissonSolver::PoissonSolver(std::istream& infile) {
 		char mshpath[256];
-		infile.getline(mshpath, 256);
+ 		infile.getline(mshpath, 256);
 		std::fstream mesh(mshpath);
 		Mesh::ReadGmsh(mesh, this->Nodes, this->Elements, this->Groups);
 
@@ -41,17 +41,17 @@ namespace FEM
 
 					Eigen::Matrix<double, 2, 3> B =
 						(Eigen::Matrix2d() <<
-							E(3, 2) - E(1, 2), E(1, 2) - E(2, 2),
-							E(1, 1) - E(3, 1), E(2, 1) - E(1, 1)).finished()
+							E(2, 1) - E(0, 1), E(0, 1) - E(1, 1),
+							E(0, 0) - E(2, 0), E(1, 0) - E(0, 0)).finished()
 						*
 						(Eigen::Matrix<double, 2, 3>() <<
 							-1, 1, 0,
 							-1, 0, 1).finished();
 					Eigen::Matrix3d localA = B.transpose()*B;
 
-					for (int r = 1; r <= 3; ++r) {
-						for (int c = 1; c <= 3; ++c) {
-							A.insert(e.Nodes[r - 1], e.Nodes[c - 1]) += localA(r, c);
+					for (int r = 0; r < 3; ++r) {
+						for (int c = 0; c < 3; ++c) {
+							A.insert(e.Nodes[r], e.Nodes[c]) += localA(r, c);
 						}
 					}
 				}

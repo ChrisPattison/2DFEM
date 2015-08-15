@@ -5,11 +5,10 @@
 
 int main(int argc, char** argv) {
 	try {
-		if (argc < 3) {
-			throw std::exception("Arguments <Case Path> <Mesh Path> not found.");
+		if (argc < 2) {
+			throw std::exception("Case path argument not found.");
 		}
-		std::fstream casefile(argv[1], std::ios_base::in),
-			msh(argv[2], std::ios_base::in);
+		std::fstream casefile(argv[1], std::ios_base::in);
 		FEM::PoissonSolver solver(casefile);
 	}
 	catch (std::exception e) {
