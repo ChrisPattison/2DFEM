@@ -55,37 +55,38 @@ namespace Mesh
 						//msh >> line;
 						//if (line.compare("$EndElements") != 0) throw std::exception("Unexpected end of Elements section");
 						msh >> elements[i].No;
-						int type;
-						msh >> type;
-						elements[i].Type = static_cast<ELEMENT_TYPE>(type);
-						msh >> type;
-						if (type != 2) throw std::exception("Unknown mesh attributes");
-						msh >> elements[i].Grp, elements[i].Grp; // on purpose
+						int temp, node;
+						msh >> temp;
+						elements[i].Type = static_cast<ELEMENT_TYPE>(temp);
+						msh >> temp;
+						if (temp < 1) throw std::exception("Element physical group not found.");
+						msh >> elements[i].Grp;
+						for (int ii = 1; ii < temp; ++ii ) {
+							msh >> node;
+						}
 						elements[i].Grp = SearchGroup(groups, elements[i].Grp);
-						int node;
 						switch (elements[i].Type) {
 						case ELEMENT_TYPE::LINE:
-							for (int ii = 0; i < 2; ++i) {
+							for (int ii = 0; ii < 2; ++ii) {
 								msh >> node;
 								elements[i].Nodes.push_back(SearchNode(nodes, node));
 							}
+							break;
 						case ELEMENT_TYPE::TRIANGLE:
-							for (int ii = 0; i < 3; ++i) {
+							for (int ii = 0; ii < 3; ++ii) {
 								msh >> node;
 								elements[i].Nodes.push_back(SearchNode(nodes, node));
 							}
+							break;
 						}
 						elements[i].Nodes.shrink_to_fit();
 					}
 				}
+				if (msh.eof()) break;
 			}
 		}
 		catch (std::istream::failure e) {
 			if (!msh.eof()) throw e;
-		}
-
-		for (node& n : nodes) {
-			n.Elements.shrink_to_fit();
 		}
 	}
 
@@ -94,6 +95,7 @@ namespace Mesh
 		for (;;) {
 			msh >> line;
 			if (line[0] == '$') return line;
+			if (msh.eof()) return std::string("");
 		}
 	}
 

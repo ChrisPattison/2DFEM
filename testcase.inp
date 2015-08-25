@@ -1,6 +1,6 @@
 test.msh
 1e-7
-left d 400
-right d 300
-top d 200
-bottom d 400
+Left d 400
+Right d 300
+Top d 200
+Bottom d 400

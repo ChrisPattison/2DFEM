@@ -10,6 +10,7 @@ int main(int argc, char** argv) {
 		}
 		std::fstream casefile(argv[1], std::ios_base::in);
 		FEM::PoissonSolver solver(casefile);
+		solver.Solve();
 	}
 	catch (std::exception e) {
 		std::cout << e.what();

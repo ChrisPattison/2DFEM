@@ -14,6 +14,7 @@ namespace FEM
 				std::string name;
 				char type;
 				infile >> name;
+				if (name == "") break;
 				Mesh::group& g = this->Groups[Mesh::SearchGroup(this->Groups, name)];
 				infile >> type;
 				g.BoundType = static_cast<Mesh::BOUNDARY_TYPE>(type);
@@ -25,8 +26,10 @@ namespace FEM
 		}
 
 		this->T = Eigen::VectorXd(this->Nodes.size());
-		T.fill(300);
-		q.fill(0);
+		this->q = Eigen::VectorXd(this->Nodes.size());
+		this->A = Eigen::SparseMatrix<double>(this->Nodes.size(), this->Nodes.size());
+		this->T.fill(300);
+		this->q.fill(0);
 		for (int i = 0; i < this->Elements.size(); ++i) {
 			Mesh::element& e = Elements[i];
 
@@ -34,10 +37,9 @@ namespace FEM
 
 				case(Mesh::ELEMENT_TYPE::TRIANGLE) : {
 					Eigen::Matrix<double, 3, 2> E;
-					E <<
-						this->Nodes[e.Nodes[0]].Coord,
-						this->Nodes[e.Nodes[1]].Coord,
-						this->Nodes[e.Nodes[2]].Coord; // TODO: confirm behavior
+					E.row(0) = this->Nodes[e.Nodes[0]].Coord;
+					E.row(1) = this->Nodes[e.Nodes[1]].Coord;
+					E.row(2) = this->Nodes[e.Nodes[2]].Coord;
 
 					Eigen::Matrix<double, 2, 3> B =
 						(Eigen::Matrix2d() <<
@@ -51,7 +53,7 @@ namespace FEM
 
 					for (int r = 0; r < 3; ++r) {
 						for (int c = 0; c < 3; ++c) {
-							A.insert(e.Nodes[r], e.Nodes[c]) += localA(r, c);
+							this->A.coeffRef(e.Nodes[r], e.Nodes[c]) += localA(r, c);
 						}
 					}
 				}
@@ -59,11 +61,27 @@ namespace FEM
 
 				case(Mesh::ELEMENT_TYPE::LINE) : {
 					for (int n : e.Nodes) {
-						q(n) = -this->Groups[e.Grp].Value;
+						this->q(n) = -this->Groups[e.Grp].Value;
 					}
 				}
 				break;
 			}
 		}
+		for (int i = 0; i < this->Elements.size(); ++i) {
+			if (this->Elements[i].Type == Mesh::ELEMENT_TYPE::LINE) {
+				for (int ii = 0; i < this->Elements[i].Nodes.size(); ++i) {
+					this->q(this->Elements[i].Nodes[ii]) -= this->Groups[this->Elements[i].Grp].Value;
+					//TODO: do something about multiple BCs on a node
+				}
+			}
+		}
+	}
+
+	double PoissonSolver::Solve() {
+		Eigen::BiCGSTAB<Eigen::SparseMatrix<double>> solver;
+		solver.compute(this->A);
+		solver.setTolerance(this->Resid);
+		this->T = solver.solveWithGuess(this->q, this->T);
+		return solver.error();
 	}
 };

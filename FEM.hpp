@@ -15,7 +15,7 @@ namespace FEM
 	public:
 		EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 		PoissonSolver(std::istream& infile);
-		int Solve();
+		double Solve();
 	private:
 		std::vector<Mesh::node> Nodes;
 		std::vector<Mesh::group> Groups;
