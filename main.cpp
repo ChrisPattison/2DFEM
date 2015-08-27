@@ -9,8 +9,12 @@ int main(int argc, char** argv) {
 			throw std::exception("Case path argument not found.");
 		}
 		std::fstream casefile(argv[1], std::ios_base::in);
+		std::cout << "Setting up solver\n";
 		FEM::PoissonSolver solver(casefile);
-		solver.Solve();
+		std::cout << "Solving...\n";
+		double resid = solver.Solve();
+		std::cout << "Done with Residual: " << resid << "\n";
+		std::cout << solver.T;
 	}
 	catch (std::exception e) {
 		std::cout << e.what();

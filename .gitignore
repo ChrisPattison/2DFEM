@@ -6,3 +6,6 @@
 Debug/*
 Release/*
 x64/*
+Doc/*.aux
+Doc/*.log
+Doc/*.synctex.gz

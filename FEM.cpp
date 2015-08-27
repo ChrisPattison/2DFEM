@@ -4,7 +4,7 @@ namespace FEM
 {
 	PoissonSolver::PoissonSolver(std::istream& infile) {
 		char mshpath[256];
- 		infile.getline(mshpath, 256);
+		infile.getline(mshpath, 256);
 		std::fstream mesh(mshpath);
 		Mesh::ReadGmsh(mesh, this->Nodes, this->Elements, this->Groups);
 
@@ -81,7 +81,8 @@ namespace FEM
 		Eigen::BiCGSTAB<Eigen::SparseMatrix<double>> solver;
 		solver.compute(this->A);
 		solver.setTolerance(this->Resid);
-		this->T = solver.solveWithGuess(this->q, this->T);
+		this->T = solver.solve(this->q);
+		int iter = solver.iterations();
 		return solver.error();
 	}
 };
