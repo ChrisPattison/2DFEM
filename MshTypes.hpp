@@ -7,7 +7,7 @@ namespace Mesh
 {
 	struct node
 	{
-		Eigen::Vector2d Coord;
+		Eigen::RowVector2d Coord;
 		int MshNo;
 	};
 	

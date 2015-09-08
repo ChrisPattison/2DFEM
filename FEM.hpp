@@ -17,11 +17,11 @@ namespace FEM
 		PoissonSolver(std::istream& infile);
 		double Solve();
 		Eigen::VectorXd T;
-	private:
 		std::vector<Mesh::node> Nodes;
+	private:
 		std::vector<Mesh::group> Groups;
 		std::vector<Mesh::element> Elements;
-		Eigen::VectorXd q;
+		Eigen::VectorXd b;
 		Eigen::SparseMatrix<double> A;
 		double Resid;
 	};

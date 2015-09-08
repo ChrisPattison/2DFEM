@@ -90,6 +90,16 @@ namespace Mesh
 		}
 	}
 
+	void WriteData(std::fstream& msh, std::fstream& output, std::vector<node>& nodes, Eigen::VectorXd T) {
+		output << msh.rdbuf() << "\n";
+		output << "$NodeData\n1\nTemperature\n0\n3\n0\n1\n" << nodes.size() << "\n";
+		for (int i = 0; i < nodes.size(); ++i)
+		{
+			output << nodes[i].MshNo << " " << T(i) << "\n";
+		}
+		output << "$EndNodeData";
+	}
+
 	std::string NextIdentifier(std::istream& msh) {
 		std::string line;
 		for (;;) {
