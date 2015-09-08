@@ -78,7 +78,7 @@ namespace FEM
 	}
 
 	double PoissonSolver::Solve() {
-		Eigen::SimplicialLDLT<Eigen::SparseMatrix<double>> Dsolver;
+		/*Eigen::SimplicialLDLT<Eigen::SparseMatrix<double>> Dsolver;
 		Dsolver.compute(this->A);
 		double det = Dsolver.determinant();
 		std::cout << "Det: " << det << "\n";
@@ -86,12 +86,12 @@ namespace FEM
 			throw std::exception("Matrix not invertable");
 		}
 		this->T = Dsolver.solve(this->b);
-		return 0.0;
-		/*Eigen::BiCGSTAB<Eigen::SparseMatrix<double>> solver;
+		return 0.0;*/
+		Eigen::BiCGSTAB<Eigen::SparseMatrix<double>> solver;
 		solver.compute(this->A);
 		solver.setTolerance(this->Resid);
 		this->T = solver.solve(this->b);
 		int iter = solver.iterations();
-		return solver.error();*/
+		return solver.error();
 	}
 };
