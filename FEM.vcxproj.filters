@@ -22,12 +22,21 @@
     <ClInclude Include="FEM.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MshTypes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadGmsh.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="FEM.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReadGmsh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

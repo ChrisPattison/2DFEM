@@ -1,4 +1,6 @@
-fem.exe <case>
+A 2D unstructured Finite Element solver for the heat equation.
+
+fem.exe <case> <output>
 Accepts a mesh in the Gmsh 2 ASCII format.
 
 Only Dirichlet boundarys are currently implemented
