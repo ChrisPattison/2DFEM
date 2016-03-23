@@ -1,6 +1,7 @@
-largetest.msh
+test.msh
 1e-7
 Left d 0
-Right d 1
-Top d 1
-Bottom d 1
+Right d 0
+Top d 0
+Bottom d 0
+Hole d 5

@@ -35,6 +35,7 @@ namespace FEM
 
 			switch (e.Type) { // Fill A Matrix
 				case(Mesh::ELEMENT_TYPE::TRIANGLE) : {
+
 					Eigen::Matrix<double, 3, 3> E;
 					E << this->Nodes[e.Nodes[0]].Coord, 1,
 						this->Nodes[e.Nodes[1]].Coord, 1,
