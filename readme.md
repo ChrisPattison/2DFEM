@@ -1,5 +1,7 @@
 A 2D unstructured Finite Element solver for the heat equation.
 
+![](/result.png?raw=true)
+
 fem.exe <case> <output>
 Accepts a mesh in the Gmsh 2 ASCII format.
 
