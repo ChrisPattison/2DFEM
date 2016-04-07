@@ -5,7 +5,9 @@ A 2D unstructured Finite Element solver for the heat equation.
 fem.exe \<case\> \<output\>
 Accepts a mesh in the Gmsh 2 ASCII format.
 
-Only Dirichlet boundarys are currently implemented
+Supports only triangle mesh elements
+
+Only Dirichlet boundries are currently implemented
 
 The case file format is
 
